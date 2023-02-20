@@ -1,0 +1,74 @@
+.dish {
+  box-shadow: 0 5px 15px rgba(51, 51, 51, .15);
+  border-radius: 5px;
+}
+
+.dish .img-holder {
+  width: 100%;
+  height: 220px;
+  border-radius: 5px 5px 0 0;
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: center;
+}
+
+.dish:nth-of-type(1) .img-holder {
+  background-image: url("../assets/greek_salad.jpg");
+}
+
+.dish:nth-of-type(2) .img-holder {
+  background-image: url("../assets/bruchetta.png");
+}
+
+.dish:nth-of-type(3) .img-holder {
+  background-image: url("../assets/lemon_dessert.jpg");
+}
+
+.dish .content {
+  padding: 25px 15px;
+}
+
+.dish .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dish .head h3 {
+  font-family: "MarkaziText";
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.dish .head span {
+  color: #F4CE14;
+  font-weight: bold;
+}
+
+.dish p {
+  margin: 10px 0 15px;
+}
+
+.dish .order {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dish .order .line-button {
+  text-decoration: underline;
+  color: #495E57;
+  font-family: bold;
+  cursor: pointer;
+}
+
+.dish .order img {
+  width: 24px;
+  transform: translateY(2px);
+}
+
+@media (min-width: 765px) {
+  .dish .img-holder {
+    height: 180px;
+  }
+}

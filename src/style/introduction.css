@@ -1,0 +1,59 @@
+.introduction {
+  padding: 10px 15px;
+  min-height: calc(100vh - 60px);
+  background-color: #495E57;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.introduction div h1 {
+  font-family: "MarkaziText";
+  color: #F4CE14;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+.introduction div span,
+.introduction div p {
+  color: #EDEFEE;
+}
+.introduction div p {
+  margin: 10px 0 20px;
+}
+.introduction div .button {
+  padding: 8px 15px;
+  background-color: #F4CE14;
+  color: #495E57;
+  border-radius: 18.5px;
+  cursor: pointer;
+  transition: .25s;
+}
+.introduction div .button:hover {
+  background-color: #DAB500;
+}
+.introduction .food {
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+  background-image: url("../assets/restaurant_food.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+@media (min-width: 765px) {
+  .introduction {
+    min-height: 25vh;
+    padding: 15px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .introduction div {
+    width: 48%;
+  }
+  .introduction div p {
+    margin: 15px 0 25px;
+  }
+  .introduction .food {
+    width: 45%;
+  }
+}

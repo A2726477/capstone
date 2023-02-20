@@ -1,6 +1,7 @@
-
+import { useRef } from "react";
 
 function Nav() {
+	const nav = useRef(null);
     const linksArr = [
     	{id: 1, name: "Home"},
     	{id: 2, name: "About"},
@@ -9,14 +10,17 @@ function Nav() {
     	{id: 5, name: "Order Online"},
     	{id: 6, name: "Login"}
     ];
+    function removeFunction() {
+        nav.current.classList.toggle("active");
+    }
     const links = linksArr.map(({id, name}) => {
     	return (
-    		<li key={id}><a href={`#${name.toLowerCase()}`}>{name}</a></li>
+    		<li key={id} onClick={removeFunction}><a href={`#${name.toLowerCase()}`}>{name}</a></li>
     	);
     });
 	return (
 		<>
-          <nav>
+          <nav ref={nav}>
             <ul>{links}</ul>
           </nav>
 		</>

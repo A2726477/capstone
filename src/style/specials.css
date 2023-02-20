@@ -1,0 +1,45 @@
+.specials {
+  padding: 30px 15px;
+}
+
+.specials .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.specials .heading .button {
+  padding: 8px 15px;
+  background-color: #F4CE14;
+  color: #334;
+  font-weight: bold;
+  border-radius: 18.5px;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.specials .heading .button:hover {
+  background-color: #DAB500;
+}
+.specials .heading h2 {
+  font-family: "MarkaziText";
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.specials .dishes {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+@media (min-width: 765px) {
+  .specials {
+    padding: 35px 20px;
+  }
+
+  .specials .dishes {
+    flex-direction: row;
+    gap: 25px;
+  }
+}

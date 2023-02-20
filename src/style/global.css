@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "MarkaziText";
+  src: url("../assets/fonts/MarkaziText.ttf");
+}
+@font-face {
+  font-family: "Karla";
+  src: url("../assets/fonts/Karla.ttf");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-family: "Karla";
+}
+ul {
+  list-style: none;
+}
+a {
+  color: initial;
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+}
+@media (min-width: 765px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+}
